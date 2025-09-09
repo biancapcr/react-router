@@ -1,9 +1,6 @@
-import Navbar from "../components/Navbar";
-
 const ChiSiamo = () => {
   return (
     <>
-      <Navbar />
       <div className="page page-about">
         <h1 className="page-title">Chi Siamo</h1>
 

@@ -11,10 +11,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route element={<DefaultLayout />}></Route>
+          <Route element={<DefaultLayout />}>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/chisiamo" element={<ChiSiamo />}></Route>
-          <Route path="/prodotti" element={<Prodotti />}></Route>
+          <Route index path="/prodotti" element={<Prodotti />}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </>
@@ -22,4 +23,5 @@ function App() {
 }
 
 export default App;
+
 
