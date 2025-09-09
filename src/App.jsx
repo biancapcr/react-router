@@ -1,10 +1,10 @@
-import { BrowserRouter } from "react-router-dom";
-import { Routes } from "react-router-dom";
-import { Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import ChiSiamo from "./pages/ChiSiamo";
 import Prodotti from "./pages/Prodotti";
 import DefaultLayout from "./layouts/DefaultLayout";
+import ProductDetail from "./pages/ProductDetail.jsx";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
@@ -12,9 +12,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<DefaultLayout />}>
-          <Route path="/" element={<Homepage />}></Route>
-          <Route path="/chisiamo" element={<ChiSiamo />}></Route>
-          <Route index path="/prodotti" element={<Prodotti />}/>
+            <Route index element={<Homepage />} />
+            <Route path="chisiamo" element={<ChiSiamo />} />
+            <Route path="prodotti" element={<Prodotti />} />
+            <Route path="/products/:id" element={<ProductDetail />} />
           </Route>
         </Routes>
       </BrowserRouter>
