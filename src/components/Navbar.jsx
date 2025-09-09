@@ -4,7 +4,6 @@ export default function Navbar() {
   return (
     <header className="topbar">
       <div className="topbar-inner">
-        <NavLink to="/" className="brand">MyStore</NavLink>
 
         <nav className="menu" aria-label="Main">
           <NavLink

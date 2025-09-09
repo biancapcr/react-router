@@ -5,7 +5,7 @@ import { Outlet } from "react-router-dom";
   return (
     <>
       <Navbar />
-      <main className="wrapper">
+      <main>
         <Outlet />
       </main>
     </>
